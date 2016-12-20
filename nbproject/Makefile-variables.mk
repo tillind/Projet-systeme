@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=coledit
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/coledit
+CND_ARTIFACT_NAME_Debug=projet-systeme
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/projet-systeme
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=coledit.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/coledit.tar
+CND_PACKAGE_NAME_Debug=projet-systeme.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/projet-systeme.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=coledit
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/coledit
+CND_ARTIFACT_NAME_Release=projet-systeme
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/projet-systeme
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=coledit.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/coledit.tar
+CND_PACKAGE_NAME_Release=projet-systeme.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/projet-systeme.tar
 #
 # include compiler specific variables
 #
