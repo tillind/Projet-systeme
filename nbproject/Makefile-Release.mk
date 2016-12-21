@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/nbproject/fonctionA.o
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -67,11 +66,6 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
-
-${OBJECTDIR}/nbproject/fonctionA.o: nbproject/fonctionA.c 
-	${MKDIR} -p ${OBJECTDIR}/nbproject
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/nbproject/fonctionA.o nbproject/fonctionA.c
 
 # Subprojects
 .build-subprojects:
