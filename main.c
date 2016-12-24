@@ -24,6 +24,14 @@ int main(int argc, char** argv) {
         char proprio[8];
         char connecte[10][8];
     };
+    char *concat_string(const char *s1, const char *s2)
+    {
+        char *s3=NULL;
+        s3=(char *)malloc((strlen(s1)+strlen(s2))+1);
+        strcpy(s3,s1);
+        strcat(s3,s2);
+        return s3;
+    }
     void write (FILE* fichier,char *chemin,struct document mastruct)/*w,r,a+,...*/
         {   
             fichier = fopen(chemin, "a+");
@@ -38,16 +46,17 @@ int main(int argc, char** argv) {
             fichier = fopen(chemin, "r");
             while (fgets(chaine, TAILLE_MAX, fichier) != NULL) // On lit le fichier tant qu'on ne reçoit pas d'erreur (NULL)
             {
-                strcat(str.text,chaine); // On insère ce qu'on vient de lire
+                
+                str.text=concat_string(str.text,chaine);
+                printf("%s",str.text);
             }
             fclose(fichier);
         }
     struct document mesDoc[5];
     /*test écriture*/
-    mesDoc[5].text="bonjour tout le monde \n";
+    mesDoc[5].text="bonjour tout le monde";
     FILE* fichier = NULL;
     write(fichier,"./test.txt",mesDoc[5]);
     read(fichier,"./test.txt",mesDoc[5]);
-    printf("%s",mesDoc[5].text);
     return (EXIT_SUCCESS);
 }
